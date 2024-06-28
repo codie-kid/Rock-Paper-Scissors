@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header1">
+                <h2>Rock</h2>
+                <h2>Paper <h2>
+                <h2>Scissor</h2>
+            </div>
+            <div class="header1">
+                <div class="score-board">
+                    <div id="computer-label" class="badge">
+                       <h6>COMPUTER <br> SCORE</h6> 
+                        <span class="score" id="computer-score">0</span></div>
+                    <div id="user-label" class="badge">
+                        <h6>YOUR <br> SCORE</h6>
+                         <span class="score" id="user-score">0</span></div>                  
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="result">
+            <p id="result-message">Make your move!</p>
+        </div>
+        <div class="choices">
+            <div id="rock" class="choice"><img src="rock.png" alt="Rock"></div>
+            <div id="paper" class="choice"><img src="paper.png" alt="Paper"></div>
+            <div id="scissors" class="choice"><img src="scissors.png" alt="Scissors"></div>
+        </div>
+        <button id="rules-button">Rules</button>
+    </div>
+    
+    <div id="rules-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Game Rules</h2>
+            <p>⏹️ Rock beats Scissors, Scissors beat Paper, and Paper beats Rock.</p>
+            <p>⏹️ Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.” </p>
+            <p>⏹️ Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p>
+            <p>⏹️ If both players lay down the same hand, each player lays down another hand</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
